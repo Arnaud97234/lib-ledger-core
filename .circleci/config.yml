@@ -4,6 +4,8 @@ dependencies:
   cache_directories:
     - ~/cmake-3.10.3
 jobs:
+  branch:
+    only: develop
   build_linux_release:
     docker:
       - image: debian:stretch
